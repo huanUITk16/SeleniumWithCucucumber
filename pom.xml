@@ -20,6 +20,13 @@
                 <configuration>
                     <source>10</source>
                     <target>10</target>
+		    <annotationProcessorPaths>
+                      <path>
+                         <groupId>org.projectlombok</groupId>
+                         <artifactId>lombok</artifactId>
+                         <version>1.18.22</version>
+                      </path>
+                   </annotationProcessorPaths>
                 </configuration>
             </plugin>
             <plugin>
