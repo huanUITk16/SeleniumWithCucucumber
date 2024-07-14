@@ -32,7 +32,7 @@ public class Hook extends BaseUtil{
     @Before
     public void InitializeTest(Scenario scenario) {
         base.scenarioDef = base.features.createNode(scenario.getName());
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().driverRepositoryUrl(new URL("https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.126/win64/chromedriver-win64.zip")).setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless");
         base.Driver = new ChromeDriver(chromeOptions);
